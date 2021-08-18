@@ -1,0 +1,386 @@
+﻿@using JokerEmlak.Models.Entity
+@model  List<TBLEVLER>
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joker Emlak</title>
+    <link rel="stylesheet" href="~/starter/assets/css/style-starter.css">
+</head>
+<body>
+    <!-- Topmenu-4 block -->
+    <section class="w3l-top-menu-4">
+        <header class="top-menu4">
+            <div class="wrapper">
+                <div class="d-grid align-topmenu4">
+                    <div class="top-menu4-left d-grid align-items-menu4">
+                        <ul class="social-icons">
+                            <li class="facebook"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+                            <li class="twitter"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+                            <li class="instagram"><a href="#instagram"><span class="fa fa-instagram"></span></a></li>
+                            <li class="google-plus"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+                            <li class="linkedin"><a href="#linkedin"><span class="fa fa-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="top-menu4-right">
+                        <ul class="top-menu-right">
+                            <li><a href="tel:+404 11-22-89"> <span class="fa fa-phone"> </span>+(90)522 333 44 55</a> <span>Telefon</span> </li>
+                            <li><a href="jokeremlak@hotmail.com"> <span class="fa fa-envelope-open-o"> </span>jokeremlak@hotmail.com</a> <span>E mail</span> </li>
+                            <li><p> <span class="fa fa-clock-o"> </span>08:00-17:00</p> <span>Çalışma Saatleri</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-- /Topmenu-4 block -->
+    <!-- Headers-4 block -->
+    <section class="w3l-header-4">
+        <header id="headers4-block">
+            <div class="wrapper">
+                <div class="d-grid nav-mobile-block header-align">
+                    <div class="logo">
+                        <a class="brand-logo" href="index.html"><span>Joker Emlak</span></a>
+                        <!-- if logo is image enable this
+                        <a class="brand-logo" href="#index.html">
+                            <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                        </a> -->
+                    </div>
+                    <input type="checkbox" id="nav" />
+                    <label class="nav" for="nav"></label>
+                    <nav>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop">
+                        <ul class="menu">
+                            <li><a href="index.html">Anasayfa</a></li>
+                            <li><a href="about.html">Hakkımızda</a></li>
+                            <li><a href="services.html">Hizmetlerimiz</a></li>
+                            <li><a href="contact.html">İletişim</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-- Headers-4 block -->
+    <!-- covers4 block -->
+    <section class="w3l-covers-4">
+        <div id="covers4-block">
+            <!-- main-slider -->
+            <div class="main-slider">
+                <div class="csslider infinity" id="slider1">
+                    <input type="radio" name="slides" checked="checked" id="slides_1" />
+                    <input type="radio" name="slides" id="slides_2" />
+                    <input type="radio" name="slides" id="slides_3" />
+                    <input type="radio" name="slides" id="slides_4" />
+                    <ul>
+                        <li class="slider-bg-1">
+                            <div class="slider-info-wrapper">
+                                <div class="slider-info">
+                                    <div class="d-grid slide-two-col">
+                                        <div class="slide-left-text">
+                                            <h3>Harika Evler Bulalım </h3>
+                                            <h3><span>500₺'den Başlayan Fiyatlarla</span></h3>
+                                            <p>
+                                                Birbirinden Harika evleri Uygun Fiyatlara Sizlerle Buluşturalım.Hemen Arayın Hayalinizdeki Eve kavuşun.
+                                            </p>
+                                            <a href="about.html" class="btn button-style">Devamını Oku</a>
+                                            <a href="contact.html" class="btn button-style1">Bize Ulaşın</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-bg-2">
+                            <div class="slider-info-wrapper">
+                                <div class="slider-info">
+                                    <div class="d-grid slide-two-col">
+                                        <div class="slide-left-text">
+                                            <h3>Kurumsal Firmalara Kiralık Apartmanlar </h3>
+                                            <h3><span>Aylık 2000₺'den Başlayan Fiyatlarla</span></h3>
+                                            <p>
+                                                Uygun Ödeme Koşullarıyla İşletmenizi Daha İyi Binalara Taşıyalım.
+                                            </p>
+                                            <a href="about.html" class="btn button-style">Devamını Oku</a>
+                                            <a href="contact.html" class="btn button-style1">Bize Ulaşın</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-bg-3">
+                            <div class="slider-info-wrapper">
+                                <div class="slider-info">
+                                    <div class="d-grid slide-two-col">
+                                        <div class="slide-left-text">
+                                            <h3>Müstakil Bir Yaşama Merhaba De!</h3>
+                                            <h3><span>2500₺'den Başlayan Fiyatlarla</span></h3>
+                                            <p>
+                                                Hayalini Kurduğunuz Bahçeli Yeşillikler İçindeki Evinizi Birlikte Bulalım.
+                                            </p>
+                                            <a href="about.html" class="btn button-style">Devamını Oku</a>
+                                            <a href="contact.html" class="btn button-style1">Bize Ulaşın</a>
+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="arrows">
+                        <label for="slides_1"></label>
+                        <label for="slides_2"></label>
+                        <label for="slides_3"></label>
+                    </div>
+                    <div class="navigation">
+                        <div>
+                            <label for="slides_1"></label>
+                            <label for="slides_2"></label>
+                            <label for="slides_3"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /main-slider -->
+        </div>
+    </section>
+    <!-- covers4 block -->
+    <section class="w3l-feature-8">
+        <div class="features-main">
+            <div class="wrapper">
+                <div class="features">
+                    <div class="feature-1">
+                        <div class="feature-body">
+                            <div class="feature-images">
+                                <span class="fa fa-rebel"></span>
+                            </div>
+                            <div class="feature-info">
+                                <a href="#property">
+                                    <h3 class="feature-titel">Vizyonumuz</h3>
+                                </a>
+                                <p class="feature-text">
+                                    Hayalini Kurduğunuz Yaşantıyı Bulmakta Sizlere Yardımcı Olmak.
+                                </p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-2">
+                        <div class="feature-body">
+                            <div class="feature-images">
+                                <span class="fa fa-line-chart"></span>
+                            </div>
+                            <div class="feature-info">
+                                <a href="#property">
+                                    <h3 class="feature-titel">Misyonumuz</h3>
+                                    <p class="feature-text">
+                                        Kaliteyi Ucuza Maletmek.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-3">
+                        <div class="feature-body">
+                            <div class="feature-images">
+                                <span class="fa fa-rocket"></span>
+                            </div>
+                            <div class="feature-info">
+                                <a href="#property">
+                                    <h3 class="feature-titel">Memnuniyet</h3>
+                                    <p class="feature-text">
+                                        2020 Yılında Yaptığımız 50 Kiralama İle Müşteri Memnuniyetini Sağladık.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- grids block 4 -->
+    <section class="w3l-grids-4">
+        <div id="grids4-block">
+            <div class="wrapper">
+                <h3 class="heading-title">Kiralık Ev İlanları</h3>
+                <div class="owl-carousel owl-theme">
+                    @foreach (var x in Model)
+                    {
+                    <div class="item">
+                        <div class="grids4-info">
+                            <a href="#properties-single"><img src="@x.GORSEL" alt="" style="width:330px; height:200px"/></a>
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">@x.BASLIK</a></h5>
+                                <span class="price">@x.FIYAT ₺</span>
+                                <p>@x.ACIKLAMA<ul>
+                                    <li><span class="fa fa-bed"></span> @x.YATAK</li>
+                                    <li><span class="fa fa-bath"></span> @x.BANYO</li>
+                                    <li><span class="fa fa-share-square-o"></span>@x.METREKARE m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- grids block 4 -->
+    <!-- js -->
+    <script src="~/starter/assets/js/jquery-3.3.1.min.js"></script> <!-- jquery latest version 3.4.1 -->
+    <script src="~/starter/assets/js/owl.carousel.js"></script> <!-- owl carousel -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false,
+                        margin: 20
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: true,
+                        margin: 20
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- grid -->
+    
+    <!-- //grid -->
+    <div class="w3l-products-4">
+        <!-- Products4 block -->
+        
+        <!-- Products4 block -->
+    </div>
+    <section class="w3l-companies-hny-6">
+        <!-- /grids -->
+        <div class="companies-layout">
+            <div class="wrapper">
+                <h3 class="heading-title">Müşterilerimiz</h3>
+                <div class="grid grid-column-5">
+
+                    <div class="column">
+                        <div class="company-gd">
+                            <a href="#client"><img class="img-responsive" src="~/starter/assets/images/client1.png" alt="client"> </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="company-gd">
+                            <a href="#client"><img class="img-responsive" src="~/starter/assets/images/client2.png" alt="client"> </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="company-gd">
+                            <a href="#client"><img class="img-responsive" src="~/starter/assets/images/client3.png" alt="client"> </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="company-gd">
+                            <a href="#client"><img class="img-responsive" src="~/starter/assets/images/client4.png" alt="client"> </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="company-gd">
+                            <a href="#client"><img class="img-responsive" src="~/starter/assets/images/client5.png" alt="client"> </a>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+
+                </div>
+
+            </div>
+            <!-- //grids -->
+    </section>
+
+
+    <!-- subscribe -->
+    
+    <!-- //subscribe -->
+    <!-- footer-29 block -->
+    <section class="w3l-footer-29-main">
+        <div class="footer-29">
+            <div class="wrapper">
+                <div class="d-grid grid-col-4 footer-top-29">
+                    <div class="footer-list-29 footer-1">
+                        <h6 class="footer-title-29">Bizimle iletişime geçin</h6>
+                        <ul>
+                            <li><p><span class="fa fa-map-marker"></span> Paris Mah.Londra Sok. Süper APT. NO:3 DAİRE:3 ŞİŞLİ/İSTANBUL</p></li>
+                            <li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +(90)522 333 44 55</a></li>
+                            <li><a href="mailto:estate-mail@support.com" class="mail"><span class="fa fa-envelope-open-o"></span> jokeremlak@hotmail.com</a></li>
+                        </ul>
+                        <div class="main-social-footer-29">
+                            <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                            <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                            <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                            <a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+                            <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                        </div>
+                    </div>
+                    <div class="footer-list-29 footer-2">
+                        <ul>
+                            <h6 class="footer-title-29">Kategori</h6>
+                            <li><a href="#link">Daireler (15)</a></li>
+                            <li><a href="#link">Evler (120)</a></li>
+                            <li><a href="#link">Villalar (19)</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-29 footer-3">
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- //footer-29 block -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+        } else {
+            document.getElementById("movetop").style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- /move top -->
+</body>
+</html>
